@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './Header'
 import Home from '../Pages/Home'
 import Footer from './Footer'
@@ -7,10 +7,10 @@ import About from '../pages/About'
 import Locations from '../pages/Locations'
 
 const App = () => {
-  const basename = import.meta.env.MODE === 'production' ? '/test-deploy' : ''
+  const basename = import.meta.en.MODE === 'production' ? '/test-deploy' : ''
   return (
     <div>
-      <HashRouter basename={basename}>
+      <BrowserRouter basename={basename}>
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -21,7 +21,7 @@ const App = () => {
           {/*Route générique pour les URL non valides*/}
         </Routes>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </div>
   )
 }
