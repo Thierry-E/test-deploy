@@ -1,0 +1,21 @@
+@import '../Utils/Variables.scss';
+
+.gallery {
+  width: 86%;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+  gap: 50px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    background-color: transparent;
+    margin: 20px 0;
+    padding: 20px 0 0 0;
+    gap: 20px;
+  }
+}

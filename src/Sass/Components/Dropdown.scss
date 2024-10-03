@@ -1,0 +1,84 @@
+@import '../Utils/Variables.scss';
+
+.listContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 10px 15px;
+  margin-bottom: 22px;
+
+  .list {
+    width: 1023px;
+    height: 34px;
+    background-color: $fourth-color;
+    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1024px) {
+      width: 700px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 335px;
+    }
+  }
+
+  h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: $secondary-color;
+
+    @media screen and (max-width: 767px) {
+      font-size: 0.813em;
+    }
+  }
+
+  .rafter {
+    font-size: 44px;
+    font-weight: 550;
+    color: $secondary-color;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+
+    @media screen and (max-width: 767px) {
+    }
+    font-size: 32px;
+  }
+
+  .rafterActive {
+    transform: rotate(-92deg);
+  }
+
+  p {
+    width: 1023px;
+    font-size: 1em;
+    font-weight: 500;
+    color: $primary-color;
+    margin-bottom: 0;
+    line-height: 1.8em;
+    opacity: 0;
+  }
+
+  .listActive {
+    opacity: 1;
+    background-color: $third-color;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 25px;
+    padding: 25px;
+
+    @media screen and (max-width: 1024px) {
+      width: 700px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 335px;
+    }
+  }
+}

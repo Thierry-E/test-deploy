@@ -1,0 +1,11 @@
+// Fichiers regroupant les odes réutilisables par catégories.
+
+/***Ombres sur les textes***/
+
+@mixin banner-text-shadow {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin counterShadow {
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+}

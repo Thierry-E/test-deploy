@@ -1,0 +1,209 @@
+@import '../Utils/Variables.scss';
+
+.logementContent {
+  width: 86%;
+  margin: 0 auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.infosLeft {
+  width: 80%;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  h2 {
+    color: $fourth-color;
+    font-size: 2.25em;
+    font-weight: 500;
+    line-height: 51px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.125em;
+      width: 335px;
+      line-height: 25px;
+    }
+  }
+
+  p {
+    color: $primary-color;
+    font-size: 1.125em;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 0.875em;
+      margin-bottom: 15px;
+    }
+  }
+
+  .tags {
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  span {
+    width: 115px;
+    height: 25px;
+    background: $fourth-color;
+    color: $third-color;
+    padding: 6px 20px;
+    margin-right: 10px;
+    font-size: 0.875em;
+    font-weight: 700;
+    border-radius: 15px;
+
+    @media screen and (max-width: 767px) {
+      width: 84px;
+      height: 18px;
+      font-size: 0.625em;
+      border-radius: 10px;
+      padding: 10px;
+    }
+  }
+}
+
+.infosRight {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 105px;
+  }
+
+  .personna {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (max-width: 767px) {
+      margin-right: -20px;
+    }
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 100%;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 767px) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    h3 {
+      color: $fourth-color;
+      font-size: 1.125em;
+      text-align: right;
+      font-weight: 500;
+      width: 48%;
+
+      @media screen and (max-width: 767px) {
+        font-size: 0.75em;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.stars {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    margin-left: 25px;
+    gap: 5px;
+  }
+
+  i {
+    font-size: 1.3em;
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.125em;
+    }
+  }
+
+  .redStars {
+    color: $fourth-color;
+  }
+
+  .greyStars {
+    color: $five-color;
+  }
+}
+
+.features {
+  width: 86%;
+  margin: 0 auto 50px auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+  }
+
+  .listContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .list {
+      width: 100%;
+      margin: 0;
+      padding: 10px 20px 10px 10px;
+    }
+
+    .listActive {
+      width: 100%;
+    }
+
+    p {
+      padding: 20px;
+    }
+
+    .equipmentList {
+      width: 100%;
+
+      ul {
+        padding: 20px;
+        line-height: 2em;
+      }
+    }
+  }
+}

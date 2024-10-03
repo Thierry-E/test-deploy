@@ -1,0 +1,63 @@
+@import '../Utils/Variables.scss';
+@import '../Utils/Mixins.scss';
+
+.slideContainer {
+  width: 86%;
+  height: 415px;
+  border-radius: 25px;
+  margin: 0 auto 30px auto;
+  position: relative;
+
+  @media screen and (max-width: 1024px) {
+    height: 300px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: -93px auto 5px auto;
+    height: 255px;
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+
+  .rafter {
+    color: $secondary-color;
+    font-size: 4.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+      font-size: 1em;
+    }
+  }
+
+  .rafterLeft {
+    left: 20px;
+  }
+
+  .rafterRight {
+    right: 20px;
+  }
+
+  .counter {
+    color: $secondary-color;
+    font-size: 1.3em;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-45%);
+    @include counterShadow;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
