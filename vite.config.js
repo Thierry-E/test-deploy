@@ -5,5 +5,5 @@ import process from 'process'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/test-deploy' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/test-deploy/' : '/',
 })
