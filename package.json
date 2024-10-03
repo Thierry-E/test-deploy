@@ -1,6 +1,6 @@
 {
   "name": "op-p8-kasa",
-  "home" : "https://Thierry-E.github.io/test-deploy",
+  "homepage": "https://Thierry-E.github.io/test-deploy",
   "private": true,
   "version": "0.0.0",
   "type": "module",
