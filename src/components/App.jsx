@@ -7,9 +7,10 @@ import About from '../pages/About'
 import Locations from '../pages/Locations'
 
 const App = () => {
+  const basename = import.meta.en.MODE === 'production' ? '/test-deploy' : ''
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
