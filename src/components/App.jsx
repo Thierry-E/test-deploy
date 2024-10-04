@@ -5,10 +5,9 @@ import Footer from './Footer'
 import Error from '../pages/Error'
 import About from '../pages/About'
 import Locations from '../pages/Locations'
-import process from 'process'
 
 const App = () => {
-  const basename = process.env.PUBLIC_URL
+  const basename = import.meta.env_MODE === 'production' ? '/test-deploy/' : ''
   return (
     <div>
       <BrowserRouter basename={basename}>
