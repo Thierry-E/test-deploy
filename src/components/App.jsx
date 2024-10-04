@@ -7,7 +7,8 @@ import About from '../pages/About'
 import Locations from '../pages/Locations'
 
 const App = () => {
-  const basename = import.meta.env_MODE === 'production' ? '/test-deploy/' : ''
+  const basename =
+    import.meta.env_MODE === 'production' ? '/test-deploy/index.html' : ''
   return (
     <div>
       <BrowserRouter basename={basename}>
