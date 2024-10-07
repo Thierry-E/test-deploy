@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './Header'
-import Home from '../../src/pages/Home'
+import Home from '../pages/Home'
 import Footer from './Footer'
-import Error from '../../src/pages/Error'
+import Error from '../pages/Error'
 import About from '../pages/About'
 import Locations from '../pages/Locations'
 

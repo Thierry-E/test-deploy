@@ -1,6 +1,6 @@
-import Banner from '../components/Banner'
+import Banner from './Components/Banner'
 import Montagnes from '../assets/Montagnes.jpg'
-import DropdownList from '../components/DropdownList'
+import DropdownList from './Components/DropdownList'
 import services from '../datas/services.json'
 
 const About = () => {
