@@ -1,5 +1,5 @@
 import hebergements from '../datas/hebergements.json'
-import Cart from './Cart'
+import Cart from '../components/Cart'
 
 const Gallery = () => {
   return (

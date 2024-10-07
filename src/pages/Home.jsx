@@ -1,5 +1,5 @@
-import Banner from './Components/Banner'
-import Gallery from './Components/Gallery'
+import Banner from '../components/Banner'
+import Gallery from '../components/Gallery'
 import falaises from '../assets/Falaises.jpg'
 
 const Home = () => {

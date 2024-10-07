@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types' // Importez PropTypes
-import Dropdown from './Dropdown'
+import Dropdown from '../components/Dropdown'
 
 const DropdownList = ({ services }) => {
   return (

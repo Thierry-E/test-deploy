@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import hebergements from '../datas/hebergements.json'
-import Caroussel from './Components/Caroussel'
-import Dropdown from './Components/Dropdown'
+import Caroussel from '../components/Caroussel'
+import Dropdown from '../components/Dropdown'
 
 const Locations = () => {
   const { id } = useParams()
